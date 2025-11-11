@@ -2,24 +2,20 @@
   "name": "template-uploader-backend",
   "version": "1.0.0",
   "type": "module",
+  "description": "Backend API for template upload to Pinecone",
+  "main": "api/upload.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
   "dependencies": {
     "@pinecone-database/pinecone": "^2.0.0",
     "openai": "^4.20.0"
-  }
-}
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "16.0.1"
   },
-  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
-  "main": "index.js",
-  "keywords": [],
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": ["pinecone", "openai", "template", "upload"],
   "author": "",
   "license": "ISC"
 }
